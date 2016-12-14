@@ -53,14 +53,6 @@ ruleTester.run('prefer-destructuring', rule, {
   ],
   invalid: [
     {
-      code: 'var foo = array[0];',
-      parserOptions: { ecmaVersion: 6 },
-      errors: [{
-        message: 'Use array destructuring',
-        type: 'VariableDeclarator'
-      }]
-    },
-    {
       code: 'var foo = array.foo;',
       parserOptions: { ecmaVersion: 6 },
       errors: [{
