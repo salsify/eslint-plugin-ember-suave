@@ -19,9 +19,12 @@ module.exports = {
       'after': true
     }],
     'no-var': 'error',
+    'no-useless-rename': 'error',
     'object-shorthand': ['error', 'always'],
+    'prefer-destructuring': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
+    'eol-last': ['error', 'always'],
 
     // Overrides for Ember
     'new-cap': ['error', {
@@ -31,7 +34,6 @@ module.exports = {
     // Custom rules
     'ember-suave/no-const-outside-module-scope': 'error',
     'ember-suave/no-direct-property-access': 'error',
-    'ember-suave/prefer-destructuring': 'error',
     'ember-suave/require-access-in-comments': 'error',
     'ember-suave/require-const-for-ember-properties': 'error'
   }
